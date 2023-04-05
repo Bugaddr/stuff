@@ -91,3 +91,13 @@ git sparse-checkout set examples/slack-clone-basic
 ```
 git log --branches --tags --remotes --full-history --date-order --format='%ai %an <%ae> %h %f'
 ```
+## COnvert bare to normal repo
+```
+mkdir .git
+mv {HEAD,info,packed-refs,refs,objects,config} .git
+git config --local --bool core.bare false
+git config --local http.postBuffer 524288000 #FORFASTSPEED
+git config remote.origin.fetch '+refs/heads/*:refs/remotes/origin/*'
+git checkout msm8953_baseline
+git reset --hard
+```
