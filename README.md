@@ -1,6 +1,5 @@
 # LAZYSCRIPT
-CAUTION::No one is responsible other than you for wrong use of any script
-Powerfull scripts for me atleast
+- CAUTION := No one is responsible other than you for wrong use of any script
 
 # Download ARCH Installer
 ```
