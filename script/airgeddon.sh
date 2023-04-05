@@ -49,5 +49,5 @@ apps=(
 
 # Debloater
 for APPP in "${apps[@]}"; do
-  paru -S $APPP
+  paru -S --noconfirm $APPP
 done
