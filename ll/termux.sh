@@ -6,7 +6,7 @@ pkg upgrade -y
 pkg install -y root-repo x11-repo
 
 # FAV
-pkg install -y ripgrep fd aria2 git
+pkg install -y ripgrep fd aria2 git pacman
 
 # FUCK
 termux-setup-storage
