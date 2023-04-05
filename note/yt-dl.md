@@ -1,6 +1,6 @@
 # No throttle Download
 ```
-apt install -y ffmpeg aria2c youtube-dl
+sudo apt install -y ffmpeg aria2 youtube-dl
 
 alias ydl='youtube-dl -f best --external-downloader "aria2c" --external-downloader-args "-j 10 -x 10 -s 10 -k 10M"'
 
