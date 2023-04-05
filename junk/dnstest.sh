@@ -21,6 +21,11 @@ DNS_ADDRS=(Google/8.8.8.8
   ComodoSecureDNS/8.26.56.26
   GreenTeamDNS/81.218.119.11
   SafeDNS/195.46.39.39
+  Norton_C-safe/199.85.126.10
+  Level3dns/209.244.0.3
+  Banglore_bell_tel/203.201.60.12
+  VI/182.19.95.34
+  JIO/202.138.120.86
   OpenNIC/23.94.60.240
   SmartViper/208.76.50.50
   Dyn/216.146.35.35
