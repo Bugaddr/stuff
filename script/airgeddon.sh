@@ -15,7 +15,7 @@ noroot(){
 }
 
 # INSTALL REQUIRED STUFF
-paru -S \
+paru -Syu \
     aircrack-ng \
     asleap \
     bettercap \
