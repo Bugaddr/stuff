@@ -4,10 +4,10 @@
 sudo apt update -y && sudo apt upgrade -y
 sudo add-apt-repository ppa:openjdk-r/ppa -y
 sudo apt install git-core p7zip-full aria2 rclone pigz bc bison build-essential \
-    curl flex g++-multilib gcc-multilib git gnupg gperf imagemagick libncurses5 \
-    lib32readline-dev lib32z1-dev liblz4-tool libsdl1.2-dev ccache libtinfo5 zip \
-    libwxgtk3.0-dev libxml2 libxml2-utils lzop pngcrush schedtool squashfs-tools \
-    xsltproc zlib1g-dev unzip openjdk-8-jdk libssl-dev python
+	curl flex g++-multilib gcc-multilib git gnupg gperf imagemagick libncurses5 \
+	lib32readline-dev lib32z1-dev liblz4-tool libsdl1.2-dev ccache libtinfo5 zip \
+	libwxgtk3.0-dev libxml2 libxml2-utils lzop pngcrush schedtool squashfs-tools \
+	xsltproc zlib1g-dev unzip openjdk-8-jdk libssl-dev python
 sudo apt autoremove --purge -y
 curl https://storage.googleapis.com/git-repo-downloads/repo >./repo
 sudo mv repo /usr/bin/repo && sudo chmod a+x /usr/bin/repo && PATH="/usr/bin/repo:$PATH"

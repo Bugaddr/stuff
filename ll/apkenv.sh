@@ -17,12 +17,12 @@ export PATH="$PATH:$ANDROID_SDK_ROOT/cmdline-tools/latest/bin"
 
 # Permanent Env Variables [EXTRAENV: NINJA_PATH="$(which ninja)"]
 if grep -q 'ANDROID_SDK_ROOT' ~/.bashrc; then
-    true
+	true
 else
-    echo -e '\nexport ANDROID_ROOT="$PWD/ASDK"' >>~/.bashrc
-    echo -e 'export ANDROID_SDK_ROOT="$ANDROID_ROOT/sdk"' >>~/.bashrc
-    echo -e 'export ANDROID_NDK_ROOT="$ANDROID_SDK_ROOT/ndk-bundle"' >>~/.bashrc
-    echo -e 'export PATH="$PATH:$ANDROID_SDK_ROOT/cmdline-tools/latest/bin"' >>~/.bashrc
+	echo -e '\nexport ANDROID_ROOT="$PWD/ASDK"' >>~/.bashrc
+	echo -e 'export ANDROID_SDK_ROOT="$ANDROID_ROOT/sdk"' >>~/.bashrc
+	echo -e 'export ANDROID_NDK_ROOT="$ANDROID_SDK_ROOT/ndk-bundle"' >>~/.bashrc
+	echo -e 'export PATH="$PATH:$ANDROID_SDK_ROOT/cmdline-tools/latest/bin"' >>~/.bashrc
 fi
 
 # Download and setup cmdlinetools

@@ -1,9 +1,7 @@
 #!/usr/bin/env bash
 
-
 sed -i -z 's| --compressed| \\\n--compressed|g' $1
 sed -i -z 's| -X| \\\n-X|g' $1
 sed -i -z 's| -H| \\\n-H|g' $1
 sed -i -z 's| -d| \\\n-d|g' $1
 sed -i -z 's|curl\n-H|curl -H \\|g' $1
-

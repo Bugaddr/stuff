@@ -10,8 +10,8 @@ git clone https://github.com/Apon77Lab/android_.repo_local_manifests.git --depth
 rm -rf .repo
 
 #variables
-com () { 
-    tar --use-compress-program="pigz -k -$2 " -cf "$1".tar.gz "$1"
+com() {
+	tar --use-compress-program="pigz -k -$2 " -cf "$1".tar.gz "$1"
 }
 
 #compression
