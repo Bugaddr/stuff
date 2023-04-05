@@ -8,8 +8,14 @@ if [ "$EUID" -ne 0 ]; then
     else echo 'offline Please connect...' && exit; fi
 fi
 
+# some var
+export SUSER="${SUDO_USER:-${USER}}"
+noroot(){
+		sudo -H -u "$SUSER" bash -c "$1"
+}
+
 # INSTALL REQUIRED STUFF
-paru -S --needed --noconfirm \
+paru -S \
     aircrack-ng \
     asleap \
     bettercap \
