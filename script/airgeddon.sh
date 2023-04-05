@@ -1,9 +1,11 @@
 #!/usr/bin/env bash
 
 # CHECK ROOT
-if ((EUID != 0)); then
-    echo -e "\033[31;5;7mPlease run as root\033[0m"
-    exit
+if [ "$EUID" -ne 0 ]; then
+    echo -e "\033[31;5;7mPlease run as root\033[0m" && exit
+    if : >/dev/tcp/8.8.8.8/53; then
+        echo ''
+    else echo 'offline Please connect...' && exit; fi
 fi
 
 # INSTALL REQUIRED STUFF
