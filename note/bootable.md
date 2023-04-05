@@ -1,0 +1,10 @@
+### FORMAT
+```
+mkfs.vfat -I /dev/sdb
+```
+
+### BURN
+```
+dd if=archlinux.iso of=/dev/sdb bs=4M status=progress
+sync
+```
