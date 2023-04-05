@@ -7,7 +7,7 @@ if ((EUID != 0)); then
 fi
 
 # INSTALL REQUIRED STUFF
-paru -S \
+paru -S --needed --noconfirm \
     aircrack-ng \
     asleap \
     bettercap \
