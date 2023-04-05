@@ -13,13 +13,11 @@ git push -u origin master
 
 ## ssh
 ```
-ssh-keygen -t rsa -N '' -f ~/.ssh/id_rsa <<< y
-ls ~/.ssh
-eval `ssh-agent`
-ssh-add ~/.ssh/id_rsa
-cat ~/.ssh/id_rsa #Private Key Keep Safe
-cat ~/.ssh/id_rsa.pub #Public key Add To Github
-ssh -T git@github.com #Connect to github
+ssh-keygen -o -a 100 -t ed25519 -N '' -f ~/.ssh/id_ed25519 <<< y
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+cat ~/.ssh/id_ed25519.pub
+ssh -T git@github.com
 ```
 
 ## Push Commit
