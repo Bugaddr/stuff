@@ -2,9 +2,7 @@
 
 ## Env setup for AOSP (Run Part By Part Only fot x86_64)
 ```
-sudo apt update -y
-sudo apt upgrade -y
-sudo apt autoremove --purge -y
+sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y
 sudo add-apt-repository ppa:openjdk-r/ppa -y
 sudo apt install git-core p7zip-full rclone pigz -y
 
