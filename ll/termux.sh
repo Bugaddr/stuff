@@ -27,3 +27,6 @@ curl -L https://cs.symfony.com/download/php-cs-fixer-v3.phar -o php-cs-fixer
 chmod a+x php-cs-fixer
 mv php-cs-fixer ~/.local/bin/php-cs-fixer
 
+#GIT CONFIG
+git config --global url."git@github.com:".insteadOf "https://github.com/"
+git config --global url."git@gitlab.com:".insteadOf "https://gitlab.com/"
