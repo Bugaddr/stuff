@@ -21,6 +21,7 @@ apps=(
   'ettercap'
   'gawk'
   'hashcat'
+  'hashcat-utils'
   'hcxdumptool'
   'hcxtools'
   'hostapd'
