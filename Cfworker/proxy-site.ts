@@ -25,7 +25,7 @@ async function proxyRequest(r: Request): Promise<Response> {
         }
         return fetch(targetUrl)
     } else {
-        return new Response('Bad Request', {status: 400, statusText: 'Bad Request'})
+        return new Response('Bad Request', { status: 400, statusText: 'Bad Request' })
     }
 }
 
